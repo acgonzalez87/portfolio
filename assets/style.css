@@ -106,7 +106,8 @@ header nav ul li a:hover {
   border-left: 5px solid var(--primary-color);
   flex: 2 70%;
   display: table;
-  padding: 10px 5px;
+  padding: 50px 25px;
+  margin: 15px;
 }
 
 #contact-me {
@@ -116,6 +117,12 @@ header nav ul li a:hover {
 
 .contact {
   flex: 5 70%;
+  padding: 50px 25px;
+  align-items: center;
+  display: flex;
+  border-left: 5px solid var(--primary-color);
+  margin: 15px;
+  justify-content: space-between;
 }
 
 .contact ul {
@@ -125,7 +132,7 @@ header nav ul li a:hover {
   align-items: center;
   list-style: none;
   font-size: 28px;
-  border-left: 5px solid var(--primary-color);
+  width: 100%;
 }
 
 .contact ul li a {
