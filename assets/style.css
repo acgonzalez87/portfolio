@@ -300,8 +300,9 @@ footer {
   width: 100%;
   padding: 40px 35px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 @media screen and (max-width: 1038px) {
