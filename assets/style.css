@@ -8,20 +8,35 @@
   --primary-color: hsl(207, 67%, 22%);
 }
 
-header nav {
-  background-color: lightslategray;
-  float: left;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: rgb(192, 192, 189);
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+  z-index: 9999;
 }
 
 header h1 {
-  font-size: xx-large;
-  display: flex;
-  float: left;
+  font-weight: bold;
+  font-size: 60px;
+  color: var(--primary-color);
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
   text-decoration: none;
   color: var(--primary-color);
+}
+
+header nav {
+  margin: 7px 0;
 }
 
 header nav ul {
@@ -35,20 +50,33 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: x-large;
+  font-size: 1.55vw;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-header a:hover {
-  background-color: darkgray;
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.clearfix {
+  clear: both;
 }
 
 .banner {
-  background-image: url(./images/space.png);
+  background-image: url(./images/grey.jpg);
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-position: 100%;
   color: white;
+}
+
+.subtitle {
+  margin: 20px;
+  flex: 1;
 }
 
 .subtitle h2 {
@@ -58,24 +86,71 @@ header a:hover {
   font-size: 1.55vw;
 }
 
-.flex-row {
-  display: flex;
-  bottom: 50%;
-  line-height: 1.3;
-  size: portrait;
-}
-
-.subtitle {
-  margin: 20px;
-  flex: 1;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 .intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-#about-me {
+.sidebar {
+  margin: 50px 25px;
+  width: 10%;
+  float: left;
+  font-size: 60px;
+  color: var(--primary-color);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.about-info {
+  font-size: 28px;
+  border-left: 5px solid var(--primary-color);
+  flex: 2 70%;
+  display: table;
+  padding: 10px 5px;
+}
+
+#contact-me {
+  display: flex;
+  justify-content: start;
+}
+
+.contact {
+  flex: 5 70%;
+}
+
+.contact ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 28px;
+  border-left: 5px solid var(--primary-color);
+}
+
+.contact ul li a {
+  padding: 15px 20px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+  display: table;
+  margin: 0px auto 0px auto;
+  text-decoration: none;
+}
+
+.contact ul li a:hover {
+  background: var(--primary-color);
+  color: white;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+footer {
+  background: rgb(192, 192, 189);
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
