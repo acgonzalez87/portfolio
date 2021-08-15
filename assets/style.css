@@ -61,6 +61,11 @@ header nav ul li a:hover {
   text-shadow: none;
 }
 
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
 .clearfix {
   clear: both;
 }
@@ -72,18 +77,6 @@ header nav ul li a:hover {
   background-attachment: fixed;
   background-position: 100%;
   color: white;
-}
-
-.subtitle {
-  margin: 20px;
-  flex: 1;
-}
-
-.subtitle h2 {
-  position: relative;
-  float: right;
-  top: 90%;
-  font-size: 1.55vw;
 }
 
 .intro {
@@ -108,6 +101,104 @@ header nav ul li a:hover {
   display: table;
   padding: 50px 25px;
   margin: 15px;
+}
+
+.work {
+  display: flex;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex: 2 70%;
+  padding: 50px 25px;
+  margin: 15px;
+  border-left: 5px solid var(--primary-color);
+}
+
+.work-text {
+  margin-bottom: 10px;
+  width: 160px;
+  height: 70px;
+  display: block;
+  background: rgb(192, 192, 189);
+
+  color: var(--primary-color);
+}
+
+.work-big-item {
+  width: 80%;
+  border-radius: 14px;
+  border: 4px solid var(--primary-color);
+  background-color: rgb(192, 192, 189);
+  margin-bottom: 15px;
+  background-image: url(./images/surf.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px 0;
+  min-height: 250px;
+  display: flex;
+  position: relative;
+}
+
+.work-item-a {
+  width: 37.5%;
+  border-radius: 14px;
+  border: 4px solid var(--primary-color);
+  background-color: rgb(192, 192, 189);
+  margin: 0 50px 15px 50px;
+  background-image: url(./images/surf.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 250px;
+  display: flex;
+  position: relative;
+}
+.work-item-b {
+  width: 37.5%;
+  border-radius: 14px;
+  border: 4px solid var(--primary-color);
+  background-color: rgb(192, 192, 189);
+  margin: 0 50px 15px 50px;
+  background-image: url(./images/surf.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 250px;
+  display: flex;
+  position: relative;
+}
+
+.work-item-c {
+  width: 37.5%;
+  border-radius: 14px;
+  border: 4px solid var(--primary-color);
+  background-color: rgb(192, 192, 189);
+  margin: 0 50px 15px 50px;
+  background-image: url(./images/surf.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 250px;
+  display: flex;
+  position: relative;
+}
+
+.work-item-d {
+  width: 37.5%;
+  border-radius: 14px;
+  border: 4px solid var(--primary-color);
+  background-color: rgb(192, 192, 189);
+  margin: 0 50px 15px 50px;
+  background-image: url(./images/surf.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  min-height: 250px;
+  display: flex;
+  position: relative;
 }
 
 #contact-me {
@@ -160,4 +251,56 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 40px;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+
+  .intro {
+    flex-direction: column;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  .work {
+    flex-direction: column;
+  }
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact ul li a {
+    font-size: 40px;
+  }
 }
