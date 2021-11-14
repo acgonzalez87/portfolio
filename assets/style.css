@@ -126,6 +126,7 @@ header nav ul li a:hover {
   color: var(--primary-color);
   opacity: 100%;
   border-radius: 5px;
+  padding: 3px 5px 0px 5px;
 }
 
 .work-text:hover {
